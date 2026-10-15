@@ -12,7 +12,7 @@
 <body>
 <div class="page">
   <header class="top">
-    <span class="brand">Charlie Bertrand</span>
+    <span class="brand">Charlie bertrand</span>
     <div class="tabs" role="tablist" aria-label="Sections">
       <button class="tab" role="tab" id="tab-accueil" data-view="accueil" aria-selected="true" type="button">Accueil</button>
       <button class="tab" role="tab" id="tab-projets" data-view="projets" aria-selected="false" type="button">Projets</button>
@@ -27,23 +27,32 @@
   <main>
     <section class="view" id="accueil" role="tabpanel" aria-labelledby="tab-accueil">
       <div class="hero-copy">
-      <span class="status"><i></i> Disponible pour de nouvelles missions</span>
-      <h1>Je crée des sites <em>rapides</em>, clairs et faciles à faire évoluer.</h1>
-      <p class="lead">Développeuse web freelance. J'accompagne les petites entreprises, les associations et les indépendants, de la maquette à la mise en ligne.</p>
+      <span class="status"><i></i> BTS SIO option SISR · 1re année</span>
+      <h1>Je me forme à administrer des <em>systèmes</em> et des réseaux.</h1>
+      <p class="lead">En première année de BTS Services informatiques aux organisations, option Solutions d'infrastructure, systèmes et réseaux. Je monte des laboratoires virtuels et je documente chaque manipulation.</p>
       <div class="cta">
         <button class="btn" type="button" data-go="projets">Voir mes projets</button>
         <button class="btn ghost" type="button" data-go="contact">Me contacter</button>
       </div>
       </div>
       <div class="mock" aria-hidden="true">
-        <div class="mock-bar"><i></i><i></i><i></i><span class="mock-url">monsite.fr</span></div>
-        <div class="mock-body">
-          <div class="mock-nav"><b></b><span></span><span></span><span></span></div>
-          <div class="mock-hero"><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="mock-btn"></div></div>
-          <div class="mock-cards"><div></div><div></div><div></div></div>
+        <div class="mock-bar"><i></i><i></i><i></i><span class="mock-url">bash — lab-debian</span></div>
+        <div class="term">
+          <div><span class="p">sio@lab:~$</span> ip -br a</div>
+          <div class="dim">eth0  UP  192.168.10.12/24</div>
+          <div><span class="p">sio@lab:~$</span> ping -c 1 192.168.10.1</div>
+          <div class="dim">64 bytes : ttl=64 time=0.4 ms</div>
+          <div><span class="p">sio@lab:~$</span> systemctl status ssh</div>
+          <div><span class="ok">●</span> <span class="dim">active (running)</span></div>
+          <div><span class="p">sio@lab:~$</span> <i class="cursor"></i></div>
         </div>
-        <span class="chip chip-a"><i></i>Responsive</span>
-        <span class="chip chip-b"><i></i>Accessible</span>
+        <div class="topo">
+          <span class="node">Routeur</span><span class="link"></span>
+          <span class="node">Switch</span><span class="link"></span>
+          <span class="node">Serveur</span>
+        </div>
+        <span class="chip chip-a"><i></i>Linux</span>
+        <span class="chip chip-b"><i></i>Réseaux</span>
       </div>
     </section>
 
@@ -52,38 +61,38 @@
       <ul class="projects">
         <li>
           <a class="project" href="#contact" data-go="contact">
+            <div class="p-visual pv-grid" aria-hidden="true"></div>
+            <div class="p-top"><span class="p-year">Réseau</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Laboratoire réseau virtualisé</h3>
+            <p class="p-desc">Maquette d'un réseau d'entreprise avec routeur, commutateur et plusieurs VLAN, montée et testée dans des machines virtuelles.</p>
+            <div class="p-tags"><span class="tag">VirtualBox</span><span class="tag">VLAN</span><span class="tag">Routage</span></div>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="#contact" data-go="contact">
             <div class="p-visual pv-dots" aria-hidden="true"></div>
-            <div class="p-top"><span class="p-year">2026</span><span class="p-arrow" aria-hidden="true">↗</span></div>
-            <h3 class="p-title">Boulangerie Le Fournil</h3>
-            <p class="p-desc">Site vitrine avec carte des produits, horaires du jour et commande de pains à retirer en boutique.</p>
-            <div class="p-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <div class="p-top"><span class="p-year">Linux</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Serveur Debian sécurisé</h3>
+            <p class="p-desc">Installation d'un serveur Debian : accès SSH par clé, utilisateurs et droits, sauvegarde automatique avec un script Bash.</p>
+            <div class="p-tags"><span class="tag">Debian</span><span class="tag">SSH</span><span class="tag">Bash</span></div>
           </a>
         </li>
         <li>
           <a class="project" href="#contact" data-go="contact">
             <div class="p-visual pv-stripes" aria-hidden="true"></div>
-            <div class="p-top"><span class="p-year">2025</span><span class="p-arrow" aria-hidden="true">↗</span></div>
-            <h3 class="p-title">Association Les Marées</h3>
-            <p class="p-desc">Refonte du site et du calendrier d'événements, modifiable par les bénévoles sans connaissances techniques.</p>
-            <div class="p-tags"><span class="tag">WordPress</span><span class="tag">Figma</span><span class="tag">SEO</span></div>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="#contact" data-go="contact">
-            <div class="p-visual pv-grid" aria-hidden="true"></div>
-            <div class="p-top"><span class="p-year">2025</span><span class="p-arrow" aria-hidden="true">↗</span></div>
-            <h3 class="p-title">Suivi de chantier</h3>
-            <p class="p-desc">Application web pour suivre l'avancement de travaux, avec photos, étapes et validation par le client.</p>
-            <div class="p-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">SQLite</span></div>
+            <div class="p-top"><span class="p-year">Windows</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Domaine Active Directory</h3>
+            <p class="p-desc">Création d'un domaine Windows Server avec utilisateurs, groupes et stratégies de groupe pour un petit parc de postes.</p>
+            <div class="p-tags"><span class="tag">Windows Server</span><span class="tag">AD DS</span><span class="tag">GPO</span></div>
           </a>
         </li>
         <li>
           <a class="project" href="#contact" data-go="contact">
             <div class="p-visual pv-rings" aria-hidden="true"></div>
-            <div class="p-top"><span class="p-year">2024</span><span class="p-arrow" aria-hidden="true">↗</span></div>
-            <h3 class="p-title">Cabinet Lefèvre</h3>
-            <p class="p-desc">Site d'un cabinet de kinésithérapie avec prise de rendez-vous en ligne et page par spécialité.</p>
-            <div class="p-tags"><span class="tag">Accessibilité</span><span class="tag">Performance</span><span class="tag">Hébergement</span></div>
+            <div class="p-top"><span class="p-year">Assistance</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Parc et tickets avec GLPI</h3>
+            <p class="p-desc">Mise en place de GLPI pour inventorier les postes et suivre les demandes d'assistance, du ticket à sa résolution.</p>
+            <div class="p-tags"><span class="tag">GLPI</span><span class="tag">Inventaire</span><span class="tag">Tickets</span></div>
           </a>
         </li>
       </ul>
@@ -93,13 +102,13 @@
       <p class="eyebrow">À propos</p>
       <div class="about">
         <div>
-          <p>Je travaille avec des gens qui ont un vrai besoin et peu de temps. Mon objectif est simple : un site qui se charge vite, que vos visiteurs comprennent en quelques secondes et que vous pouvez mettre à jour vous-même.</p>
-          <p>Avant de coder, je commence par comprendre votre activité et ce que vos clients cherchent. Le reste suit, en étapes courtes que vous pouvez valider au fur et à mesure.</p>
+          <p>Je suis en première année de BTS SIO, option SISR : la voie qui mène aux métiers de technicien et d'administrateur systèmes et réseaux. J'aime comprendre comment les choses fonctionnent, les installer moi-même et les tester dans des machines virtuelles.</p>
+          <p>Je prends des notes sur chaque manipulation (installation, configuration, dépannage) pour pouvoir la refaire et l'expliquer. Je cherche un stage pour découvrir le métier en entreprise.</p>
         </div>
         <dl class="facts">
-          <div class="fact"><dt>Expérience</dt><dd>6 ans</dd></div>
-          <div class="fact"><dt>Projets livrés</dt><dd>40+</dd></div>
-          <div class="fact"><dt>Basée à</dt><dd>Nantes, à distance partout</dd></div>
+          <div class="fact"><dt>Formation</dt><dd>BTS SIO, option SISR</dd></div>
+          <div class="fact"><dt>Année</dt><dd>1re année, 2026-2028</dd></div>
+          <div class="fact"><dt>Recherche</dt><dd>Un stage en entreprise</dd></div>
           <div class="fact"><dt>Langues</dt><dd>Français, anglais</dd></div>
         </dl>
       </div>
@@ -109,43 +118,46 @@
       <p class="eyebrow">Compétences</p>
       <div class="skills">
         <div>
-          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/><line x1="14" y1="5" x2="10" y2="19"/></svg></span>Développement</h3>
-          <ul><li>HTML, CSS, JavaScript</li><li>React</li><li>Node.js</li><li>Bases de données SQL</li></ul>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></span>Systèmes</h3>
+          <ul><li>Linux en ligne de commande (WSL, Debian)</li><li>Windows Server : AD DS, GPO</li><li>Virtualisation avec VirtualBox</li><li>Scripts Bash</li></ul>
         </div>
         <div>
-          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></span>Design</h3>
-          <ul><li>Maquettes Figma</li><li>Identité visuelle légère</li><li>Accessibilité (RGAA)</li><li>Design adaptatif mobile</li></ul>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-6 6M12 11l6 6"/></svg></span>Réseaux</h3>
+          <ul><li>Adressage IP et sous-réseaux</li><li>VLAN et routage</li><li>DHCP et DNS</li><li>Packet Tracer et Wireshark</li></ul>
         </div>
         <div>
-          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>Mise en ligne</h3>
-          <ul><li>Git et GitHub</li><li>Nom de domaine et hébergement</li><li>Référencement naturel</li><li>Mesure de performance</li></ul>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>Méthode et sécurité</h3>
+          <ul><li>Documentation technique</li><li>Gestion de tickets avec GLPI</li><li>Bonnes pratiques de sécurité</li><li>Veille technologique</li></ul>
         </div>
       </div>
     </section>
 
     <section class="view" id="cv" role="tabpanel" aria-labelledby="tab-cv" hidden>
-      <p class="eyebrow">CV</p>
+      <div class="view-head">
+        <p class="eyebrow">CV</p>
+        <a class="btn small" href="cv.pdf" download="CV.pdf"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/></svg>Télécharger mon CV</a>
+      </div>
       <div class="cv">
         <div>
-          <h3>Expérience</h3>
+          <h3>Expérience et projets</h3>
           <ul class="tl">
             <li>
-              <span class="tl-date">2023 – aujourd'hui</span>
-              <p class="tl-title">Développeuse web freelance</p>
-              <p class="tl-place">Nantes, à distance</p>
-              <p class="tl-desc">Sites vitrines et applications pour des petites entreprises, des associations et des indépendants.</p>
+              <span class="tl-date">2026 – aujourd'hui</span>
+              <p class="tl-title">Laboratoire personnel</p>
+              <p class="tl-place">À la maison, sous Windows avec WSL</p>
+              <p class="tl-desc">Machines virtuelles Linux, tests réseau et notes détaillées sur chaque manipulation.</p>
             </li>
             <li>
-              <span class="tl-date">2020 – 2023</span>
-              <p class="tl-title">Développeuse front-end</p>
-              <p class="tl-place">Agence Pixel Ouest, Nantes</p>
-              <p class="tl-desc">Intégration et développement de sites pour des clients de la région.</p>
+              <span class="tl-date">2026 – aujourd'hui</span>
+              <p class="tl-title">Travaux pratiques du BTS</p>
+              <p class="tl-place">Réseaux, Windows Server, Linux</p>
+              <p class="tl-desc">Maquettes réseau et serveurs réalisées en cours, avec un compte rendu pour chacune.</p>
             </li>
             <li>
-              <span class="tl-date">2019 – 2020</span>
-              <p class="tl-title">Alternance en intégration web</p>
-              <p class="tl-place">Studio Brume, Rennes</p>
-              <p class="tl-desc">Maquettes et intégration HTML et CSS.</p>
+              <span class="tl-date">2027 (prévu)</span>
+              <p class="tl-title">Stage de première année</p>
+              <p class="tl-place">Entreprise à définir</p>
+              <p class="tl-desc">Découverte du support, de l'administration et de la sécurité d'un parc informatique.</p>
             </li>
           </ul>
         </div>
@@ -154,14 +166,14 @@
             <h3>Formation</h3>
             <ul class="tl">
               <li>
-                <span class="tl-date">2018 – 2020</span>
-                <p class="tl-title">Master Métiers du numérique</p>
-                <p class="tl-place">Université de Nantes</p>
+                <span class="tl-date">2026 – 2028</span>
+                <p class="tl-title">BTS SIO, option SISR</p>
+                <p class="tl-place">Établissement à compléter</p>
               </li>
               <li>
-                <span class="tl-date">2015 – 2018</span>
-                <p class="tl-title">Licence Informatique</p>
-                <p class="tl-place">Université de Rennes</p>
+                <span class="tl-date">2023 – 2026</span>
+                <p class="tl-title">Baccalauréat</p>
+                <p class="tl-place">Lycée à compléter</p>
               </li>
             </ul>
           </div>
@@ -175,7 +187,7 @@
 
     <section class="view" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
       <p class="eyebrow">Contact</p>
-      <p class="contact-mail" id="mail">Charlie.Bertrand@exemple.fr</p>
+      <p class="contact-mail" id="mail">Charlie.bertrand@exemple.fr</p>
       <button class="btn" id="copy-mail" type="button">Copier l'adresse</button>
       <p class="copied" id="copied" role="status" aria-live="polite"></p>
       <div class="links">
@@ -186,7 +198,7 @@
   </main>
 
   <footer>
-    <span>© <span id="year">2026</span> Charlie Bertrand</span>
+    <span>© <span id="year">2026</span> Charlie bertrand</span>
     <span>Contenu d'exemple à remplacer</span>
   </footer>
 </div>
