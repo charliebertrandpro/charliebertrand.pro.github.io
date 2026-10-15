@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <span class="brand">Camille Moreau</span>
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="tab-accueil" data-view="accueil" aria-selected="true" type="button">Accueil</button>
+      <button class="tab" role="tab" id="tab-projets" data-view="projets" aria-selected="false" type="button">Projets</button>
+      <button class="tab" role="tab" id="tab-apropos" data-view="apropos" aria-selected="false" type="button">À propos</button>
+      <button class="tab" role="tab" id="tab-competences" data-view="competences" aria-selected="false" type="button">Compétences</button>
+      <button class="tab" role="tab" id="tab-cv" data-view="cv" aria-selected="false" type="button">CV</button>
+      <button class="tab" role="tab" id="tab-contact" data-view="contact" aria-selected="false" type="button">Contact</button>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="Changer de thème">Thème</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="view" id="accueil" role="tabpanel" aria-labelledby="tab-accueil">
+      <div class="hero-copy">
+      <span class="status"><i></i> Disponible pour de nouvelles missions</span>
+      <h1>Je crée des sites <em>rapides</em>, clairs et faciles à faire évoluer.</h1>
+      <p class="lead">Développeuse web freelance. J'accompagne les petites entreprises, les associations et les indépendants, de la maquette à la mise en ligne.</p>
+      <div class="cta">
+        <button class="btn" type="button" data-go="projets">Voir mes projets</button>
+        <button class="btn ghost" type="button" data-go="contact">Me contacter</button>
+      </div>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i><span class="mock-url">monsite.fr</span></div>
+        <div class="mock-body">
+          <div class="mock-nav"><b></b><span></span><span></span><span></span></div>
+          <div class="mock-hero"><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="mock-btn"></div></div>
+          <div class="mock-cards"><div></div><div></div><div></div></div>
+        </div>
+        <span class="chip chip-a"><i></i>Responsive</span>
+        <span class="chip chip-b"><i></i>Accessible</span>
+      </div>
+    </section>
+
+    <section class="view" id="projets" role="tabpanel" aria-labelledby="tab-projets" hidden>
+      <p class="eyebrow">Projets</p>
+      <ul class="projects">
+        <li>
+          <a class="project" href="#contact" data-go="contact">
+            <div class="p-visual pv-dots" aria-hidden="true"></div>
+            <div class="p-top"><span class="p-year">2026</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Boulangerie Le Fournil</h3>
+            <p class="p-desc">Site vitrine avec carte des produits, horaires du jour et commande de pains à retirer en boutique.</p>
+            <div class="p-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="#contact" data-go="contact">
+            <div class="p-visual pv-stripes" aria-hidden="true"></div>
+            <div class="p-top"><span class="p-year">2025</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Association Les Marées</h3>
+            <p class="p-desc">Refonte du site et du calendrier d'événements, modifiable par les bénévoles sans connaissances techniques.</p>
+            <div class="p-tags"><span class="tag">WordPress</span><span class="tag">Figma</span><span class="tag">SEO</span></div>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="#contact" data-go="contact">
+            <div class="p-visual pv-grid" aria-hidden="true"></div>
+            <div class="p-top"><span class="p-year">2025</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Suivi de chantier</h3>
+            <p class="p-desc">Application web pour suivre l'avancement de travaux, avec photos, étapes et validation par le client.</p>
+            <div class="p-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">SQLite</span></div>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="#contact" data-go="contact">
+            <div class="p-visual pv-rings" aria-hidden="true"></div>
+            <div class="p-top"><span class="p-year">2024</span><span class="p-arrow" aria-hidden="true">↗</span></div>
+            <h3 class="p-title">Cabinet Lefèvre</h3>
+            <p class="p-desc">Site d'un cabinet de kinésithérapie avec prise de rendez-vous en ligne et page par spécialité.</p>
+            <div class="p-tags"><span class="tag">Accessibilité</span><span class="tag">Performance</span><span class="tag">Hébergement</span></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="view" id="apropos" role="tabpanel" aria-labelledby="tab-apropos" hidden>
+      <p class="eyebrow">À propos</p>
+      <div class="about">
+        <div>
+          <p>Je travaille avec des gens qui ont un vrai besoin et peu de temps. Mon objectif est simple : un site qui se charge vite, que vos visiteurs comprennent en quelques secondes et que vous pouvez mettre à jour vous-même.</p>
+          <p>Avant de coder, je commence par comprendre votre activité et ce que vos clients cherchent. Le reste suit, en étapes courtes que vous pouvez valider au fur et à mesure.</p>
+        </div>
+        <dl class="facts">
+          <div class="fact"><dt>Expérience</dt><dd>6 ans</dd></div>
+          <div class="fact"><dt>Projets livrés</dt><dd>40+</dd></div>
+          <div class="fact"><dt>Basée à</dt><dd>Nantes, à distance partout</dd></div>
+          <div class="fact"><dt>Langues</dt><dd>Français, anglais</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="view" id="competences" role="tabpanel" aria-labelledby="tab-competences" hidden>
+      <p class="eyebrow">Compétences</p>
+      <div class="skills">
+        <div>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/><line x1="14" y1="5" x2="10" y2="19"/></svg></span>Développement</h3>
+          <ul><li>HTML, CSS, JavaScript</li><li>React</li><li>Node.js</li><li>Bases de données SQL</li></ul>
+        </div>
+        <div>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></span>Design</h3>
+          <ul><li>Maquettes Figma</li><li>Identité visuelle légère</li><li>Accessibilité (RGAA)</li><li>Design adaptatif mobile</li></ul>
+        </div>
+        <div>
+          <h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>Mise en ligne</h3>
+          <ul><li>Git et GitHub</li><li>Nom de domaine et hébergement</li><li>Référencement naturel</li><li>Mesure de performance</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="cv" role="tabpanel" aria-labelledby="tab-cv" hidden>
+      <p class="eyebrow">CV</p>
+      <div class="cv">
+        <div>
+          <h3>Expérience</h3>
+          <ul class="tl">
+            <li>
+              <span class="tl-date">2023 – aujourd'hui</span>
+              <p class="tl-title">Développeuse web freelance</p>
+              <p class="tl-place">Nantes, à distance</p>
+              <p class="tl-desc">Sites vitrines et applications pour des petites entreprises, des associations et des indépendants.</p>
+            </li>
+            <li>
+              <span class="tl-date">2020 – 2023</span>
+              <p class="tl-title">Développeuse front-end</p>
+              <p class="tl-place">Agence Pixel Ouest, Nantes</p>
+              <p class="tl-desc">Intégration et développement de sites pour des clients de la région.</p>
+            </li>
+            <li>
+              <span class="tl-date">2019 – 2020</span>
+              <p class="tl-title">Alternance en intégration web</p>
+              <p class="tl-place">Studio Brume, Rennes</p>
+              <p class="tl-desc">Maquettes et intégration HTML et CSS.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="cv-col">
+          <div>
+            <h3>Formation</h3>
+            <ul class="tl">
+              <li>
+                <span class="tl-date">2018 – 2020</span>
+                <p class="tl-title">Master Métiers du numérique</p>
+                <p class="tl-place">Université de Nantes</p>
+              </li>
+              <li>
+                <span class="tl-date">2015 – 2018</span>
+                <p class="tl-title">Licence Informatique</p>
+                <p class="tl-place">Université de Rennes</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Langues</h3>
+            <div class="p-tags"><span class="tag">Français, langue maternelle</span><span class="tag">Anglais, courant</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+      <p class="eyebrow">Contact</p>
+      <p class="contact-mail" id="mail">camille.moreau@exemple.fr</p>
+      <button class="btn" id="copy-mail" type="button">Copier l'adresse</button>
+      <p class="copied" id="copied" role="status" aria-live="polite"></p>
+      <div class="links">
+        <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year">2026</span> Camille Moreau</span>
+    <span>Contenu d'exemple à remplacer</span>
+  </footer>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
